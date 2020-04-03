@@ -25,12 +25,14 @@ body {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
 /* 
  * Header
 */
 .header {
     text-align: center;
     margin-bottom: 70px;
+    background-color: rgba(255,255,255, .8);
 }
 .image-wrap {
     padding: 20px 20px 0 20px;
@@ -64,7 +66,7 @@ body {
  * Navigation
 */
 .page-nav {
-    background-color: #fff;
+    background-color: rgba(255,255,255, .8);
 }
 .nav-list {
     display: flex;
@@ -84,6 +86,7 @@ body {
     border-bottom: 0;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
+    background-color: #fff;
 }
 .link-active::after {
     content: '';
