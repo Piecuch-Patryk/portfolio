@@ -15,7 +15,6 @@ body {
 }
 .background {
     background-color: #fff;
-    border-top: 2px solid #333;
     border-radius: 25px;
 }
 .bg-square-bottom {
@@ -83,6 +82,8 @@ body {
     position: relative;
     border: 2px solid #333;
     border-bottom: 0;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 .link-active::after {
     content: '';
@@ -98,6 +99,7 @@ body {
 */
 .section  {
     padding: 15px;
+    border-top: 2px solid #333;
 }
 .inactive {
     display: none;
