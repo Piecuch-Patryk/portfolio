@@ -6,12 +6,13 @@ ul {
     list-style: none;
 }
 body {
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
     padding: 70px 50px;
     background-image: url("../img/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .background {
     background-color: #fff;
@@ -78,7 +79,7 @@ body {
     margin: 0 5px;
     color: #333;
     text-decoration: none;
-    padding: 10px 5px;
+    padding: 10px;
 }
 .link-active {
     position: relative;
@@ -109,4 +110,39 @@ body {
 }
 .inactive.active {
     display: block;
+}
+
+/*
+ * Projects
+*/
+.sentence-projects {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 15px 0;
+}
+.list-projects {
+ text-align: center;
+}
+.single-project {
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px rgb(183, 166, 235);
+    margin: 20px 0;
+}
+.title-project {
+    padding: 5px 0;
+}
+.desc-project {
+    padding: 5px;
+}
+.img-project {
+    width: 100%;
+}
+.link-list-project {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 0;
+    list-style: none;
+}
+.link-list-project a {
+    text-decoration: none;
 }
