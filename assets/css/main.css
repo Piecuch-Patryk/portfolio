@@ -49,8 +49,8 @@ body {
     display: inline-block;
     padding: 10px;
     border-radius: 10px;
-    background-color: lightskyblue;
-    color: #333;
+    background-color: rgb(183, 166, 235);
+    color: #222;
     line-height: 1.1em;
 }
 .social-wrap {
