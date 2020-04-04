@@ -152,15 +152,3 @@ body {
     transform: translateY(0);
     opacity: 1;
 }
-.slide-up {
-    transform: translateY(-100%);
-    opacity: 0;
-}
-.slide-down {
-    transform: translateY(0);
-    opacity: 1;
-}
-.slide-up,
-.slide-down {
-    transition: all .5s ease;
-}
