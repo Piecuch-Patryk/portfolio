@@ -7,24 +7,15 @@ ul {
 }
 body {
     font-family: 'Lato', sans-serif;
-    padding: 70px 50px;
+    padding: 70px 30px;
     background-image: url("../img/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 .background {
-    background-color: #fff;
+    background-color: rgba(255,255,255, .8);
     border-radius: 25px;
-}
-.bg-square-bottom {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-}
-.bg-square-top {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
 }
 
 /* 
@@ -48,11 +39,11 @@ body {
 }
 .subtitle {
     display: inline-block;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgb(183, 166, 235);
     color: #222;
     line-height: 1.1em;
+    background-color: rgb(183, 166, 235);
+    padding: 8px 10px;
+    border-radius: 10px;
 }
 .social-wrap {
     display: flex;
@@ -66,44 +57,34 @@ body {
 /* 
  * Navigation
 */
-.page-nav {
-    background-color: rgba(255,255,255, .8);
-}
+
 .nav-list {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 10px 10px 0 10px;
 }
 .nav-link {
     display: inline-flex;
-    margin: 0 5px;
-    color: #333;
+    color: #000;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px 10px;
+    background-color: rgb(183, 166, 235);
+    border-radius: 10px;
 }
 .link-active {
     position: relative;
-    border: 2px solid #333;
-    border-bottom: 0;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    background-color: #fff;
-}
-.link-active::after {
-    content: '';
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, .8);
+    padding: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 /* 
  * Main
 */
 .section  {
     padding: 15px;
-    border-top: 2px solid #333;
+    border-radius: 25px;
 }
 .inactive {
     display: none;
@@ -118,7 +99,7 @@ body {
 .sentence-projects {
     font-size: 1.2em;
     text-align: center;
-    padding: 15px 0;
+    padding-top: 30px;
 }
 .list-projects {
  text-align: center;
@@ -126,7 +107,8 @@ body {
 .single-project {
     border-radius: 10px;
     box-shadow: 0 0 5px 1px rgb(183, 166, 235);
-    margin: 20px 0;
+    background-color: #fff;
+    margin: 40px 0;
 }
 .title-project {
     padding: 5px 0;
