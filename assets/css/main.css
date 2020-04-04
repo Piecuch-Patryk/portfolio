@@ -6,6 +6,8 @@ ul {
     list-style: none;
 }
 body {
+    box-sizing: border-box;
+    min-height: 100vh;
     font-family: 'Lato', sans-serif;
     padding: 70px 30px;
     background-image: url("../img/background.jpg");
@@ -62,44 +64,60 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
     padding: 10px 10px 0 10px;
+}
+.prevent-click::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
 }
 .nav-link {
     display: inline-flex;
     color: #000;
     text-decoration: none;
     padding: 5px 10px;
-    background-color: rgb(183, 166, 235);
+    /* background-color: rgb(183, 166, 235); */
+    border: 5px solid rgba(0,0,0,0);
     border-radius: 10px;
+    transition: all .5s ease;
 }
 .link-active {
     position: relative;
     background-color: rgba(255, 255, 255, .8);
-    padding: 10px;
+    border: 5px solid rgba(255, 255, 255, .8);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
+
 /* 
  * Main
 */
+.main-wrapp {
+    position: relative;
+    overflow-y: hidden;
+}
 .section  {
-    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     border-radius: 25px;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all .5s ease;
 }
-.inactive {
-    display: none;
-}
-.inactive.active {
-    display: block;
-}
-
 /*
  * Projects
 */
 .sentence-projects {
     font-size: 1.2em;
     text-align: center;
-    padding-top: 30px;
+    padding: 30px 10px 0 10px;
 }
 .list-projects {
  text-align: center;
@@ -108,7 +126,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 5px 1px rgb(183, 166, 235);
     background-color: #fff;
-    margin: 40px 0;
+    margin: 40px 15px;
 }
 .title-project {
     padding: 5px 0;
@@ -127,4 +145,22 @@ body {
 }
 .link-list-project a {
     text-decoration: none;
+}
+
+/* Navigation animates */
+.active.section {
+    transform: translateY(0);
+    opacity: 1;
+}
+.slide-up {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+.slide-down {
+    transform: translateY(0);
+    opacity: 1;
+}
+.slide-up,
+.slide-down {
+    transition: all .5s ease;
 }
