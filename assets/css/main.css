@@ -65,7 +65,7 @@ body {
     justify-content: space-around;
     align-items: center;
     position: relative;
-    padding: 10px 10px 0 10px;
+    padding: 10px 25px 0 25px;
 }
 .prevent-click::after {
     content: '';
@@ -77,19 +77,20 @@ body {
     z-index: 10;
 }
 .nav-link {
+    background-clip: padding-box;
     display: inline-flex;
     color: #000;
     text-decoration: none;
     padding: 5px 10px;
-    /* background-color: rgb(183, 166, 235); */
-    border: 5px solid rgba(0,0,0,0);
+    background-color: rgb(183, 166, 235);
+    border: 5px solid transparent;
     border-radius: 10px;
     transition: all .5s ease;
 }
 .link-active {
-    position: relative;
+    background-clip: padding-box;
     background-color: rgba(255, 255, 255, .8);
-    border: 5px solid rgba(255, 255, 255, .8);
+    border-color: rgba(255, 255, 255, .8);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }

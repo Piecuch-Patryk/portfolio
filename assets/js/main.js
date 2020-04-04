@@ -17,8 +17,8 @@ function fadeIn(str, linkEl){
 }
 
 function changeSection(e){
-    const name = this.getAttribute('href').split('#').pop();
     e.preventDefault();
+    const name = this.getAttribute('href').split('#').pop();
     // Prevent action when current one clicked.
     if(this.classList.contains('link-active')) return;
 
