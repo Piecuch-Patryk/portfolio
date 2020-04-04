@@ -32,8 +32,8 @@ function toggleNav(){
 }
 
 // Set section height to the main container.
-function setBodyHeight(name = 'projects'){
-    const el = document.getElementById(name);
+function setContainerHeight(){
+    const el = document.getElementById('projects');
     const style = window.getComputedStyle(el);
     const height = style.getPropertyValue('height');
     const container = document.querySelector('.main-wrapp');
@@ -42,6 +42,6 @@ function setBodyHeight(name = 'projects'){
 
 
 document.addEventListener('DOMContentLoaded', function(){
-    setBodyHeight();
+    setContainerHeight();
     toggleNav();
 });
