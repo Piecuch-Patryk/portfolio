@@ -1,12 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 ul {
     list-style: none;
 }
 body {
-    box-sizing: border-box;
     min-height: 100vh;
     font-family: 'Lato', sans-serif;
     padding: 70px 30px;
@@ -95,6 +95,14 @@ body {
     border-bottom-right-radius: 0;
 }
 
+/*
+ * Toggle navigation
+*/
+.active.section {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 /* 
  * Main
 */
@@ -148,8 +156,57 @@ body {
     text-decoration: none;
 }
 
-/* Navigation animates */
-.active.section {
-    transform: translateY(0);
-    opacity: 1;
+/* 
+ * Contact
+*/
+.title-section {
+    text-align: center;
+    padding: 25px 0 0 0;
+    font-size: 1.8em;
+}
+.subtitle-section {
+    text-align: center;
+    font-size: 1em;
+    margin: 0 0 25px 0;
+}
+.info-form {
+    text-align: center;
+    margin: 15px 50px;
+    font-size: .9em;
+}
+.form-wrapp {
+    padding: 15px;
+    text-align: center;
+}
+.form-input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all .5s ease;
+    border: 0;
+    box-shadow: inset 0 0 2px 1px rgb(183, 166, 235);
+    background: none;
+}
+.form-input:focus {
+    outline: 0;
+    box-shadow: inset 0 0 2px 0 rgb(254, 94, 180), 0 0 0 2px rgb(254, 94, 180);
+}
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    resize: none;
+}
+.btn-submit {
+    background-color: rgb(16, 185, 16);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    transition: all .5s ease;
+}
+.btn-submit:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgb(254, 94, 180);
 }
