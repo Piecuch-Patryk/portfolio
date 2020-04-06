@@ -8,12 +8,13 @@ ul {
 }
 body {
     min-height: 100vh;
-    font-family: 'Lato', sans-serif;
     padding: 60px 20px;
     background-image: url("../img/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    font-family: 'Lato', sans-serif;
+    color: #333;
 }
 
 /* 
@@ -169,15 +170,28 @@ body {
 /*
 * About
 */
-
+.flex-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.flex-list-item {
+    font-size: 1.1em;
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: rgb(183, 166, 235);
+    font-weight: bold;
+}
+.list-el {
+    margin: 15px 0;
+}
 
 /* 
  * Contact
 */
 .info-form {
-    /* margin: 15px 50px; */
     font-size: .9em;
-    /* padding: 10px; */
 }
 .text-warning {
     color: red;
