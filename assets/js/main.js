@@ -45,3 +45,4 @@ document.addEventListener('DOMContentLoaded', function(){
     setContainerHeight();
     toggleNav();
 });
+window.addEventListener('resize', setContainerHeight);
