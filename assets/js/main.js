@@ -36,7 +36,7 @@ function setContainerHeight(){
     const el = document.getElementById('projects');
     const style = window.getComputedStyle(el);
     const height = style.getPropertyValue('height');
-    const container = document.querySelector('.main-wrapp');
+    const container = document.getElementById('container');
     container.style.height = height;
 }
 

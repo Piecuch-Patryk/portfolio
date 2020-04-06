@@ -42,11 +42,12 @@
     </nav>
 
     <!-- Main -->
-    <main class="main-wrapp">
+    <div id="container" class="container">
         <!-- Projects -->
-        <section id="projects" class="background section active">
-            <p class="sentence-projects">My finished projects are below. Visit <a href="https://github.com/Piecuch-Patryk">here</a> and find all my projects on Github.</p>
-            <ul class="list-projects">
+        <main id="projects" class="background section active">
+            <h2 class="title-section">Recent projects</h2>
+            <p class="subtitle-section">Visit <a href="https://github.com/Piecuch-Patryk">here</a> and find all my projects on Github.</p>
+            <ul>
                 <!-- Project 1 -->
                 <li class="single-project">
                     <h3 class="title-project">Norella</h3>
@@ -68,11 +69,12 @@
                     </ul>
                 </li>
             </ul>
-        </section>
+        </main>
 
         <!-- About -->
         <article id="about" class="background section">
-            <p>I would describe myself as a motivated person with keen eye on details.</p>
+            <h2 class="title-section">Shortly about me</h2>
+            <p class="subtitle-section">I would describe myself as a motivated person with keen eye on details.</p>
             <p></p>
         </article>
 
@@ -81,10 +83,11 @@
             <h2 class="title-section">Do not hestigate!</h2>
             <p class="subtitle-section">I will be glad to answer.</p>
             <div class="info-form">
-                <p>All fields are required.</p>
-                <p>I do not store any of Your data. E-mail needed to answer only.</p>
+                <p>I do not store any of your data.</p>
+                <p class="text-warning">*All fields are required.</p>
             </div>
-            <form action="#" class="form-wrapp">
+            <!-- Form -->
+            <form action="#">
                 <div>
                     <input name="name" type="text" class="form-input" placeholder="Name">
                 </div>
@@ -99,7 +102,7 @@
                 </div>
             </form>
         </section>
-    </main>
+    </div>
 
     <!-- Scripts -->
     <script src="./assets/js/main.js"></script>
