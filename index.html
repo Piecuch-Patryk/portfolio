@@ -15,120 +15,123 @@
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-
-    <!-- Header -->
-    <header class="header">
-            <div class="image-wrap">
-                <img src="./assets/img/photo.jpg" alt="Author's photo." class="image">
-            </div>
-            <h1 class="name">Patryk Piecuch</h1>
-            <p class="subtitle">Wanna be Web Developer</p>
-            <ul class="social-wrap">
-                <li><a href="#"><i class="fas fa-at"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fab fa-github"></i></a></li>
-            </ul>
-    </header>
-
-    <!-- Nav -->
-    <nav>
-        <ul class="nav-list">
-            <li><a href="#projects" class="nav-link link-active">Projects</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Main -->
-    <div id="container" class="container">
-        <!-- Projects -->
-        <main id="projects" class="section active">
-            <h2 class="title-section">Recent projects</h2>
-            <p class="subtitle-section">Visit <a href="https://github.com/Piecuch-Patryk">here</a> and find all my projects on Github.</p>
-            <ul>
-                <!-- Project 1 -->
-                <li class="single-project">
-                    <h3 class="title-project">Norella</h3>
-                    <img src="./assets/img/norella.png" class="img-project" alt="Norella - project image.">
-                    <p class="desc-project">Norella is mobile first CMS system. This is a commercial project design and coded only by me.</p>
-                    <ul class="link-list-project">
-                        <li><a href="#">Live</a></li>
-                        <li><a href="#">Code</a></li>
-                    </ul>
-                </li>
-                <!-- Project 2 -->
-                <li class="single-project">
-                    <h3 class="title-project">Portfolio</h3>
-                    <img src="./assets/img/norella.png" class="img-project" alt="Norella - project image.">
-                    <p class="desc-project">Fully responsive, one page site. It is all design and coded only by me.</p>
-                    <ul class="link-list-project">
-                        <li><a href="#">Live</a></li>
-                        <li><a href="#">Code</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </main>
-
-        <!-- About -->
-        <article id="about" class="section">
-            <h2 class="title-section">Shortly about me</h2>
-            <p class="subtitle-section">
-                I would describe myself as a motivated person with keen eye on details and positive attitude. I am a team player and I am aware that we can achieve much more as a team.
-            </p>
-            <ul class="flex-list">
-                <li class="flex-list-item">
-                    English - intermediate
-                </li>
-                <li class="flex-list-item">
-                    PHP - basics
-                </li>
-                <li class="flex-list-item">
-                    MySql - basics
-                </li>
-                <li class="flex-list-item">
-                    JavaScript - basics
-                </li>
-            </ul>
-            <ul>
-                <li class="list-el">
-                    <strong>Git</strong> - Basics. I use Git for short time only, but I have already noticed how important this tool is.
-                </li>
-                <li class="list-el">
-                    <strong>Laravel</strong> - Basics. I created a commercial CMS system for a beauty salon. This is the CRUD application with bootstrap front-end library. The whole application was designed, coded and deployed on server only by me. Github repo <a href="#">here</a>.
-                </li>
-                <li class="list-el">
-                    <strong>jQuery</strong> - Basics. I created web application with Ajax. Piecework form application <a href="#">here</a> on github.
-                </li>
-                <li class="list-el">
-                    <strong>Bootstrap</strong> - Basics. I like to use Bootstrap or plain CSS3. I made a few projects with bootstrap.
-                </li>
-            </ul>
-        </article>
-
-        <!-- Contact -->
-        <section id="contact" class="section">
-            <h2 class="title-section">Do not hestigate!</h2>
-            <p class="subtitle-section">I will be glad to answer.</p>
-            <div class="info-form">
-                <p>I do not store any of your data.</p>
-                <p class="text-warning">*All fields are required.</p>
-            </div>
-            <!-- Form -->
-            <form action="#">
-                <div>
-                    <input name="name" type="text" class="form-input" placeholder="Name">
+    <div class="half-page">
+        <!-- Header -->
+        <header class="header">
+                <div class="image-wrap">
+                    <img src="./assets/img/photo.jpg" alt="Author's photo." class="image">
                 </div>
-                <div>
-                    <input name="email" type="email" class="form-input" placeholder="E-mail">
+                <h1 class="name">Patryk Piecuch</h1>
+                <p class="subtitle">Wanna be Web Developer</p>
+                <ul class="social-wrap">
+                    <li><a href="#"><i class="fas fa-at"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                </ul>
+        </header>
+    </div>
+
+    <div class="half-page">
+        <!-- Nav -->
+        <nav class="nav-wrapp">
+            <ul class="nav-list">
+                <li><a href="#projects" class="nav-link link-active">Projects</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Container -->
+        <div id="container" class="container">
+            <!-- Projects -->
+            <main id="projects" class="section active">
+                <h2 class="title-section">Recent projects</h2>
+                <p class="subtitle-section">Visit <a href="https://github.com/Piecuch-Patryk">here</a> and find all my projects on Github.</p>
+                <ul class="projects-wrapp">
+                    <!-- Project 1 -->
+                    <li class="single-project">
+                        <h3 class="title-project">Norella</h3>
+                        <img src="./assets/img/norella.png" class="img-project" alt="Norella - project image.">
+                        <p class="desc-project">Norella is mobile first CMS system. This is a commercial project design and coded only by me.</p>
+                        <ul class="link-list-project">
+                            <li><a href="#">Live</a></li>
+                            <li><a href="#">Code</a></li>
+                        </ul>
+                    </li>
+                    <!-- Project 2 -->
+                    <li class="single-project">
+                        <h3 class="title-project">Portfolio</h3>
+                        <img src="./assets/img/norella.png" class="img-project" alt="Norella - project image.">
+                        <p class="desc-project">Fully responsive, one page site. It is all design and coded only by me.</p>
+                        <ul class="link-list-project">
+                            <li><a href="#">Live</a></li>
+                            <li><a href="#">Code</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </main>
+
+            <!-- About -->
+            <article id="about" class="section">
+                <h2 class="title-section">Shortly about me</h2>
+                <p class="subtitle-section">
+                    I would describe myself as a motivated person with keen eye on details and positive attitude. I am a team player and I am aware that we can achieve much more as a team.
+                </p>
+                <ul class="flex-list">
+                    <li class="flex-list-item">
+                        English - intermediate
+                    </li>
+                    <li class="flex-list-item">
+                        PHP - basics
+                    </li>
+                    <li class="flex-list-item">
+                        MySql - basics
+                    </li>
+                    <li class="flex-list-item">
+                        JavaScript - basics
+                    </li>
+                </ul>
+                <ul>
+                    <li class="list-el">
+                        <strong>Git</strong> - Basics. I use Git for short time only, but I have already noticed how important this tool is.
+                    </li>
+                    <li class="list-el">
+                        <strong>Laravel</strong> - Basics. I created a commercial CMS system for a beauty salon. This is the CRUD application with bootstrap front-end library. The whole application was designed, coded and deployed on server only by me. Github repo <a href="#">here</a>.
+                    </li>
+                    <li class="list-el">
+                        <strong>jQuery</strong> - Basics. I created web application with Ajax. Piecework form application <a href="#">here</a> on github.
+                    </li>
+                    <li class="list-el">
+                        <strong>Bootstrap</strong> - Basics. I like to use Bootstrap or plain CSS3. I made a few projects with bootstrap.
+                    </li>
+                </ul>
+            </article>
+
+            <!-- Contact -->
+            <section id="contact" class="section">
+                <h2 class="title-section">Do not hestigate!</h2>
+                <p class="subtitle-section">I will be glad to answer.</p>
+                <div class="info-form">
+                    <p>I do not store any of your data.</p>
+                    <p class="text-warning">*All fields are required.</p>
                 </div>
-                <div>
-                    <textarea name="content" class="form-input" rows="10" placeholder="Message"></textarea>
-                </div>
-                <div>
-                    <button class="btn-submit">Send</button>
-                </div>
-            </form>
-        </section>
+                <!-- Form -->
+                <form class="form-wrapp" action="#">
+                    <div>
+                        <input name="name" type="text" class="form-input" placeholder="Name">
+                    </div>
+                    <div>
+                        <input name="email" type="email" class="form-input" placeholder="E-mail">
+                    </div>
+                    <div>
+                        <textarea name="content" class="form-input" rows="10" placeholder="Message"></textarea>
+                    </div>
+                    <div>
+                        <button class="btn-submit">Send</button>
+                    </div>
+                </form>
+            </section>
+        </div>
     </div>
 
     <!-- Scripts -->
