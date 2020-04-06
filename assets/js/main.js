@@ -14,6 +14,7 @@ function fadeIn(str, linkEl){
     document.getElementById(str).classList.add('active');
     linkEl.classList.add('link-active');
     togglePreventClick();
+    setContainerHeight();
 }
 
 function changeSection(e){
@@ -33,7 +34,8 @@ function toggleNav(){
 
 // Set section height to the main container.
 function setContainerHeight(){
-    const el = document.getElementById('projects');
+    const id = document.querySelector('.active').getAttribute('id');
+    const el = document.getElementById(id);
     const style = window.getComputedStyle(el);
     const height = style.getPropertyValue('height');
     const container = document.getElementById('container');
