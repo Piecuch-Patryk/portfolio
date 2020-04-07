@@ -250,6 +250,59 @@ textarea {
     outline: none;
     box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--primary-color);
 }
+.confirmation,
+.error,
+.spinner,
+.spinner::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.spinner {
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+}
+.spinner::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    border: 3px solid var(--transparent-bg);
+    border-top-color: #333;
+    border-bottom-color: #333;
+    border-radius: 50%;
+    animation: spin .8s ease-in-out infinite;
+}
+.hidden {
+    display: none;
+}
+.confirmation {
+    color: green;
+}
+.fa-check-circle {
+    display: block;
+    font-size: 4em;
+    color: green;
+}
+.error {
+    color: #fff;
+    font-size: 1em;
+    line-height: 1em;
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
 
 
 @media screen and (min-width: 500px) {
