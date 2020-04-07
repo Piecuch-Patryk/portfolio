@@ -1,10 +1,19 @@
 const form = document.getElementById('form');
-form.addEventListener('submit', formValidate);
+form.addEventListener('submit', submitFormValidate);
 
 const inputs = document.querySelectorAll('.form-input');
 inputs.forEach((el, i) => el.addEventListener('keyup', formValidate));
 
-function formValidate(e) {
+
+function submitFormValidate(e) {
+    const formData = new FormData(this);
+    const inputElements = document.querySelectorAll('input.form-input');
+    e.preventDefault();
+
+    if (validateName(inputElements[0]) && validateEmail(inputElements[1])) sendEmail(formData);
+}
+
+function formValidate() {
     switch(this.name) {
         case 'name':
             validateName(this);
@@ -13,10 +22,6 @@ function formValidate(e) {
             validateEmail(this);
             break;
     }
-    // const formData = new FormData(this);
-    // e.preventDefault();
-
-    // sendEmail();
 }
 
 /*
@@ -82,7 +87,7 @@ function toggleConfirmation() {
 /*
 *   send
 */
-function sendEmail(){
+function sendEmail(formData){
     const url = 'app/app.php';
     toggleSpinner();
     

@@ -214,9 +214,6 @@ body {
 .info-form {
     font-size: .9em;
 }
-.text-warning {
-    color: red;
-}
 .form-input {
     width: 100%;
     padding: 5px;
@@ -235,9 +232,12 @@ textarea {
     font-size: inherit;
     resize: none;
 }
-.input-error {
-    background-color: rgb(255, 0, 0, .7);
-    color: #fff;
+.form-input:not(textarea) {
+    color: green;
+
+}
+.input-error.form-input:not(textarea) {
+    color: red;
 }
 .error-hidden {
     font-size: .8em;
