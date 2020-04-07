@@ -23,33 +23,43 @@ function formValidate(e) {
 *   validations
 */
 const validateName = that => {
-    const inputClass = 'input-error';
-    const errorClass = 'error';
-    const hasClass = that.classList.contains(inputClass);
-    const  regex = /^[a-zA-Z\s]*$/;
+    const regex = /^[a-zA-Z\s]*$/;
     const lettersOnly = regex.test(that.value);
 
-    if(!hasClass){
-        if(!lettersOnly) {
-            that.classList.add(inputClass);
-            that.nextElementSibling.classList.add(errorClass);
-        }
-    }else {
-        if(lettersOnly) {
-            that.classList.remove(inputClass);
-            that.nextElementSibling.classList.remove(errorClass);
-        }
-    }
+    toggleFormErrors(that, lettersOnly);    
+    return lettersOnly;
 }
 
 const validateEmail = that => {
+    const regex = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+    const validEmail = regex.test(that.value);
 
+    toggleFormErrors(that, validEmail);
+    return validEmail;
 }
 
 
 /*
 *   toggles
 */
+
+function toggleFormErrors(that, bool) {
+    const inputClass = 'input-error';
+    const errorClass = 'error';
+    const hasClass = that.classList.contains(inputClass);
+
+    if(!hasClass){
+        if(!bool) {
+            that.classList.add(inputClass);
+            that.nextElementSibling.classList.add(errorClass);
+        }
+    }else {
+        if(bool) {
+            that.classList.remove(inputClass);
+            that.nextElementSibling.classList.remove(errorClass);
+        }
+    }
+}
 
 function toggleSpinner() {
     document.getElementById('spinner').classList.contains('hidden') ? spinner.classList.remove('hidden') : spinner.classList.add('hidden');
