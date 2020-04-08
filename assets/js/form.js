@@ -8,9 +8,16 @@ inputs.forEach((el, i) => el.addEventListener('keyup', formValidate));
 function submitFormValidate(e) {
     const formData = new FormData(this);
     const inputElements = document.querySelectorAll('input.form-input');
+    let flag = true;
     e.preventDefault();
 
-    if (validateName(inputElements[0]) && validateEmail(inputElements[1])) sendEmail(formData);
+    inputElements.forEach((el, i) => {
+        if(el.value === '') {
+            document.getElementById('info-required').classList.add('warning');
+            flag = false;
+        }
+    });
+    if (flag && validateName(inputElements[0]) && validateEmail(inputElements[1])) sendEmail(formData);
 }
 
 function formValidate() {

@@ -50,7 +50,7 @@
         <!-- Container -->
         <div id="container" class="container">
             <!-- Projects -->
-            <main id="projects" class="section">
+            <main id="projects" class="section active">
                 <h2 class="title-section">Recent projects</h2>
                 <p class="subtitle-section">Visit <a href="https://github.com/Piecuch-Patryk">here</a> and find all my projects on Github.</p>
                 <ul class="projects-wrapp">
@@ -114,12 +114,12 @@
             </article>
 
             <!-- Contact -->
-            <section id="contact" class="section active">
+            <section id="contact" class="section">
                 <h2 class="title-section">Do not hestigate!</h2>
                 <p class="subtitle-section">I will be glad to answer.</p>
                 <div class="info-form">
                     <p>I do not store any of your data.</p>
-                    <p>*All fields are required.</p>
+                    <p id="info-required">*All fields are required.</p>
                 </div>
                 <!-- Form -->
                 <form id="form" class="form-wrapp">
@@ -132,7 +132,7 @@
                         <p class="error-hidden">Provide correct email.</p>
                     </div>
                     <div>
-                        <textarea name="body" class="form-input" rows="10" placeholder="Message"></textarea>
+                        <textarea name="body" class="form-input" rows="8" placeholder="Message"></textarea>
                     </div>
                     <div>
                         <button id="btn-submit" class="btn-submit">Send</button>
