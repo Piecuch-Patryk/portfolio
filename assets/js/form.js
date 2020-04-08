@@ -86,10 +86,16 @@ function toggleError() {
 
 function toggleConfirmation() {
     document.getElementById('confirmation').classList.remove('hidden');
+    resetForm();
     setTimeout(() => {
         document.getElementById('confirmation').classList.add('hidden');
     }, 4000);
 }
+
+/*
+*   reset
+*/
+const resetForm = () => document.querySelectorAll('.form-input').forEach(el => el.value = '');
 
 /*
 *   send
@@ -104,8 +110,6 @@ function sendEmail(formData){
     })
     .then(response => response.text())
     .then(response => {
-
-        console.log(response);
         toggleSpinner();
         response === 'true' ? toggleConfirmation() : toggleError();
     })
