@@ -104,8 +104,10 @@ function sendEmail(formData){
     })
     .then(response => response.text())
     .then(response => {
+
+        console.log(response);
         toggleSpinner();
-        response == true ? toggleConfirmation() : toggleError();
+        response === 'true' ? toggleConfirmation() : toggleError();
     })
     .catch(error => console.error(error));
 }
