@@ -53,7 +53,16 @@ export default class Form {
                 flag = false;
             }
         });
-        if (flag && this.validateName(inputs[0]) && this.validateEmail(inputs[1])) this.sendEmail();
+        if(flag && !this.validateName(inputs[0])) {
+            assets.DOMelements.errorName.classList.add(assets.CSSclasses.errorInputmessage);
+        }
+        else if(flag && !this.validateEmail(inputs[1])) {
+            assets.DOMelements.errorEmail.classList.add(assets.CSSclasses.errorInputmessage);
+        }
+        else if(flag) {
+            this.sendEmail();
+        }
+        // if (flag && this.validateName(inputs[0]) && this.validateEmail(inputs[1])) this.sendEmail();
     }
 
     sendEmail = () => {

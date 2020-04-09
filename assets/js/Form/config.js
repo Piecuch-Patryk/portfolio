@@ -5,6 +5,8 @@ export const ID = {
     spinner: 'spinner',
     errorForm: 'form-error',
     confirmation: 'confirmation',
+    errorName: 'error-name',
+    errorEmail: 'error-email',
 }
 
 export const CSSclasses = {
@@ -16,6 +18,11 @@ export const CSSclasses = {
     errorSubmit: 'form-error',
 }
 
+export const inputsName = {
+    name: 'name',
+    email: 'email',
+}
+
 export const DOMelements = {
     form: document.getElementById(ID.form),
     fields: document.querySelectorAll(`.${CSSclasses.input}`),
@@ -23,13 +30,10 @@ export const DOMelements = {
     submitBtn: document.getElementById(ID.btnSubmit),
     spinner: document.getElementById(ID.spinner),
     errorEmptyFields: document.getElementById(ID.errorEmptyFields),
+    errorName: document.getElementById(ID.errorName),
+    errorEmail: document.getElementById(ID.errorEmail),
     confirmation: document.getElementById(ID.confirmation),
     errorForm: document.getElementById(ID.errorForm),
-}
-
-export const inputsName = {
-    name: 'name',
-    email: 'email',
 }
 
 export const regex = {
