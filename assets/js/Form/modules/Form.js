@@ -62,7 +62,6 @@ export default class Form {
         else if(flag) {
             this.sendEmail();
         }
-        // if (flag && this.validateName(inputs[0]) && this.validateEmail(inputs[1])) this.sendEmail();
     }
 
     sendEmail = () => {
@@ -77,17 +76,12 @@ export default class Form {
         .then(response => response.text())
         .then(response => {
             this.output.toggleSpinner();
-
-            console.log(response);
-            
-
             if(response === 'true') {
                 this.output.toggleConfirmation();
                 this.resetForm();
             } else this.output.toggleError();
         })
-        // .catch(() => this.output.toggleError());
-        .catch(error => console.error(error));
+        .catch(() => this.output.toggleError());
     }
 
     resetForm = () => assets.DOMelements.fields.forEach(el => el.value = '');
