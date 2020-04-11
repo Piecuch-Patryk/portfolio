@@ -1,2 +1,6 @@
 vendor/
+<<<<<<< HEAD
 node_modules
+=======
+node_modules
+>>>>>>> update

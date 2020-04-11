@@ -416,6 +416,7 @@ textarea {
         display: flex;
     }
     .single-project {
+        flex-basis: 50%;
         margin: 0 20px;
     }
     .nav-list {
