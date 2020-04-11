@@ -4,3 +4,4 @@ Single page website built with HTML5, CSS3, vanilla JS. The future plan is to re
 * [PHPMailer](https://github.com/PHPMailer/PHPMailer) - classic email sending library for PHP
 ## Author
 * **Patryk Piecuch** - *whole work*
+
