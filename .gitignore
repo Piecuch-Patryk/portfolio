@@ -1,6 +1,2 @@
-vendor/
-<<<<<<< HEAD
+vendor
 node_modules
-=======
-node_modules
->>>>>>> update
