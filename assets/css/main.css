@@ -2,7 +2,6 @@
     --primary-color: rgba(182, 79, 250, .7);
     --primary-color-less-visible: rgba(182, 79, 250, .2);
     --transparent-bg: rgba(255,255,255, .8);
-    --transparent-bg-mobile: rgba(255, 255, 255, .5);
     --half-page-min-height: calc(100vh - 40px - 50px); /* { body-padding-y: 40px } { half-page-padding-top: 50px } */
 }
 * {
