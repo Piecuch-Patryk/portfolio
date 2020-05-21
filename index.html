@@ -17,143 +17,240 @@
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-    <div class="half-page">
+    <!-- Navigation -->
+    <div class="nav-bar">
+        <nav id="nav-wrap" class="nav-wrapp">
+            <ul class="nav-list-socials">
+                <li><a href="mailto:kontakt@patrykpiecuch.pl"><i class="fas fa-envelope"></i></a></li>
+                <li><a href="https://github.com/Piecuch-Patryk" target="_blank"><i class="fab fa-github-square"></i></a></li>
+            </ul>
+            <ul class="nav-list">
+                <li class="nav-list-el"><a href="#projects" data-link=true>Projekty</a></li>
+                <li class="nav-list-el"><a href="#skills" data-link=true>Umiejętności</a></li>
+                <li class="nav-list-el"><a href="#contact" data-link=true>Kontakt</a></li>
+            </ul>
+            <button type="button" class="inner-btn-toggle-nav" data-toggle="nav"><i class="fas fa-times"></i></button>
+        </nav>
+        <button type="button" class="btn-toggle-nav" data-toggle="nav">
+            <span class="nav-btn-dot"></span>
+            <span class="nav-btn-dot"></span>
+            <span class="nav-btn-dot"></span>
+        </button>
+    </div>
+    <div class="paralax-wrapp">
+        <!-- Logo -->
+        <div class="logo-wrapp">
+            <img src="./assets/img/logo-opacity-50.png" class="page-logo" alt="Patryk Piecuch logo">
+        </div>
+
         <!-- Header -->
         <header class="header">
-                <div class="image-wrap">
-                    <img src="./assets/img/photo.png" alt="Author's photo." class="image">
-                </div>
-                <h1 class="name">Patryk Piecuch</h1>
-                <p class="subtitle decoration">Junior Web Developer</p>
-                <ul class="social-wrap">
-                    <li><a href="mailto:contact@patrykpiecuch.pl"><i class="fas fa-at icon"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/patryk-piecuch-71822a15a/" target="_blank"><i class="fab fa-linkedin icon"></i></a></li>
-                    <li><a href="https://github.com/Piecuch-Patryk" target="_blank"><i class="fab fa-github icon"></i></a></li>
-                </ul>
-                <ul class="header-list-wrapp">
-                    <li class="header-list-el">OOP</li>
-                    <li class="header-list-el">Mobile First</li>
-                    <li class="header-list-el">MVC</li>
-                    <li class="header-list-el">Responsive Design</li>
-                </ul>
+            <h1 class="page-title">Witaj!</h1>
+            <p class="page-subtitle">Nazywam się <span class="page-subtitle-inner">Patryk Piecuch</span>. Tworzę strony i aplikacje internetowe w oparciu o najnowsze technologie.</p>
+            <div class="header-link-wrap">
+                <a href="#projects" data-link=true class="header-link">Portfolio</a>
+                <a href="https://github.com/Piecuch-Patryk" class="header-link" target="_blank">Github</a>
+            </div>
         </header>
     </div>
 
-    <div class="half-page">
-        <!-- Nav -->
-        <nav class="nav-wrapp">
-            <ul class="nav-list">
-                <li><a href="#projects" class="nav-link link-active">Projects</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Main -->
+    <main id="projects" class="wrapper">
+        <div class="wrapper-inner">
 
-        <!-- Container -->
-        <div id="container" class="container">
-            <!-- Projects -->
-            <main id="projects" class="section">
-                <h2 class="title-section">Recent projects</h2>
-                <p class="subtitle-section">Visit <a href="https://github.com/Piecuch-Patryk" target="_blank">here</a> and find all my projects on Github.</p>
-                <ul class="projects-wrapp">
-                    <!-- Project 1 -->
-                    <li class="single-project">
-                        <h3 class="title-project">Norella</h3>
-                        <img src="./assets/img/norella.png" class="img-project" alt="Norella - project image.">
-                        <p class="desc-project">Norella is a mobile first CMS system. This is a commercial project designed and coded only by me. Production server is a free hosting due to virus. Norella's owner does not even wanna think to buy hosting and domain for now.</p>
-                        <ul class="link-list-project">
-                            <li><a href="https://norella.pl" target="_blank">Live</a></li>
-                            <li><a href="https://github.com/Piecuch-Patryk/NorellaCMS" target="_blank">Code</a></li>
+            <!-- Project -->
+            <article class="project-wrap">
+                <div class="modal">
+                    <div class="modal-inner">
+                        <img src="./assets/img/Norella/Norella-main-page.gif" class="project-image" alt="Zdjęcie projektu strony www">
+                        <h3 class="modal-inner-title">Norella - studio urody</h3>
+                        <p class="modal-inner-desc">Aplikacja internetowa napisana w Laravelu służąca do zarządzania treścią (CMS) dla studia urody - Norella.</p>
+                        <p class="modal-inner-desc">Logowanie dostępne tylko za pomocą zewnętrznego linku. Tylko administrator serwisu może zakłożyć nowe konto. Po zalogowaniu się użytkownik dodaje/edytuje lub usuwa oferty z listy.</p>
+                        <p class="modal-inner-desc">Goście odwiedzający stronę widzą całą ofertę i wizytówkę firmy z możliwością dodawania komentarzy bez logowania się.</p>
+                        <p class="modal-inner-desc">Strona responsywna.</p>
+                        <div class="modal-inner-links">
+                            <a href="" class="modal-inner-link-el" target="_blank">On-line</a>
+                            <a href="" class="modal-inner-link-el" target="_blank">Github</a>
+                        </div>
+                        <ul class="modal-logos-list">
+                            <li class="modal-logo-el">
+                                <img src="./assets/img/logos/laravel.png" alt="">
+                            </li>
+                            <li class="modal-logo-el">
+                                <img src="./assets/img/logos/bootstrap.png" alt="">
+                            </li>
+                            <li class="modal-logo-el">
+                                <img src="./assets/img/logos/masonry.png" alt="">
+                            </li>
+                            <li class="modal-logo-el">
+                                <img src="./assets/img/logos/intervention.png" alt="">
+                            </li>
+                            <li class="modal-logo-el no-img">
+                                jenssegers/agent
+                            </li>
                         </ul>
-                    </li>
-                    <!-- Project 2 -->
-                    <li class="single-project">
-                        <h3 class="title-project">Portfolio</h3>
-                        <img src="./assets/img/portfolio.png" class="img-project" alt="Portfolio - project image.">
-                        <p class="desc-project">Fully responsive, one page site. This is all designed and coded only by me. It is one-page site with no frameworks. My plan is to refactor javascript code, I want to use Babel or something similar.</p>
-                        <ul class="link-list-project">
-                            <li><a href="https://patrykpiecuch.pl" target="_blank">Live</a></li>
-                            <li><a href="https://github.com/Piecuch-Patryk/portfolio" target="_blank">Code</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </main>
-
-            <!-- About -->
-            <article id="about" class="section">
-                <h2 class="title-section">Shortly about me</h2>
-                <p class="subtitle-section">
-                    I would describe myself as a motivated person with keen eye on details and positive attitude. I am a team player and I am aware that we can achieve much more as a team.
-                </p>
-                <ul class="flex-list">
-                    <li class="flex-list-item decoration">
-                        English - intermediate
-                    </li>
-                    <li class="flex-list-item decoration">
-                        PHP - basics
-                    </li>
-                    <li class="flex-list-item decoration">
-                        MySql - basics
-                    </li>
-                    <li class="flex-list-item decoration">
-                        JavaScript - basics
-                    </li>
-                </ul>
-                <ul>
-                    <li class="list-el">
-                        <strong>Git</strong> - Basics. I use Git for short time only, but I have already noticed how important this tool is.
-                    </li>
-                    <li class="list-el">
-                        <strong>Laravel</strong> - Basics. I created a commercial CMS system for a beauty salon. This is the CRUD application with bootstrap front-end library. The whole application was designed, coded and deployed on server only by me. Github repository <a href="#">here</a>.
-                    </li>
-                    <li class="list-el">
-                        <strong>jQuery</strong> - Basics. I created web application with Ajax. Piecework form application <a href="#">here</a> on github.
-                    </li>
-                    <li class="list-el">
-                        <strong>Bootstrap</strong> - Basics. I like to use Bootstrap or plain CSS3. I made a few projects with bootstrap.
-                    </li>
-                </ul>
+                        <button type="button" class="close-modal-btn" data-toggle="modal"><i class="fas fa-arrow-alt-circle-up"></i> Zwiń</button>
+                    </div>
+                    <button type="button" class="close-modal-btn-desktop" data-toggle="modal"><i class="fas fa-times"></i></button>
+                </div>
+                <h2 class="project-title">Norella - studio urody</h2>
+                <a href="https://norella.pl" target="_blank">
+                    <img src="./assets/img/Norella/norella.png" class="project-image" alt="Zdjęcie projektu strony www">
+                </a>
+                <div class="project-row">
+                    <button type="button" class="open-modal-btn" data-toggle="modal">Szczegóły projektu</button>
+                    <div>
+                        <a href="" class="project-link" target="_blank"><i class="fas fa-globe"></i></a>
+                        <a href="" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
             </article>
 
-            <!-- Contact -->
-            <section id="contact" class="section active">
-                <h2 class="title-section">Do not hestigate!</h2>
-                <p class="subtitle-section">I will be glad to answer.</p>
-                <div class="info-form">
-                    <p>I do not store any of your data.</p>
-                    <p id="info-required">*All fields are required.</p>
+            <!-- Project -->
+            <article class="project-wrap">
+                <div class="modal">
+                    <div class="modal-inner">
+                        <img src="./assets/img/Norella/Norella-main-page.gif" class="project-image" alt="Zdjęcie projektu strony www">
+                        <h3 class="modal-inner-title">Norella - studio urody</h3>
+                        <p class="modal-inner-desc">Aplikacja internetowa napisana w Laravelu służąca do zarządzania treścią (CMS) dla studia urody - Norella.</p>
+                        <p class="modal-inner-desc">Logowanie dostępne tylko za pomocą zewnętrznego linku. Tylko administrator serwisu może zakłożyć nowe konto. Po zalogowaniu się użytkownik dodaje/edytuje lub usuwa oferty z listy.</p>
+                        <p class="modal-inner-desc">Goście odwiedzający stronę widzą całą ofertę i wizytówkę firmy z możliwością dodawania komentarzy bez logowania się.</p>
+                        <p class="modal-inner-desc">Strona responsywna.</p>
+                        <div class="modal-inner-links">
+                            <a href="" class="modal-inner-link-el" target="_blank">On-line</a>
+                            <a href="" class="modal-inner-link-el" target="_blank">Github</a>
+                        </div>
+                        <ul class="modal-logos-list">
+                            <li class="modal-logo-el">
+                                <img src="./assets/img/logos/laravel.png" alt="">
+                            </li>
+                            <li class="modal-logo-el">
+                                <img src="./assets/img/logos/bootstrap.png" alt="">
+                            </li>
+                            <li class="modal-logo-el">
+                                <img src="./assets/img/logos/masonry.png" alt="">
+                            </li>
+                            <li class="modal-logo-el">
+                                <img src="./assets/img/logos/intervention.png" alt="">
+                            </li>
+                            <li class="modal-logo-el no-img">
+                                jenssegers/agent
+                            </li>
+                        </ul>
+                        <button type="button" class="close-modal-btn" data-toggle="modal"><i class="fas fa-arrow-alt-circle-up"></i> Zwiń</button>
+                    </div>
+                    <button type="button" class="close-modal-btn-desktop" data-toggle="modal"><i class="fas fa-times"></i></button>
                 </div>
-                <!-- Form -->
-                <form id="form" class="form-wrapp">
+                <h2 class="project-title">Norella - studio urody</h2>
+                <a href="https://patrykpiecuch.pl/projects/gibbet" target="_blank">
+                    <img src="./assets/img/Gibbet/gibbet.png" class="project-image" alt="Zdjęcie projektu strony www">
+                </a>
+                <div class="project-row">
+                    <button type="button" class="open-modal-btn" data-toggle="modal">Szczegóły projektu</button>
                     <div>
-                        <input name="name" type="text" class="form-input" placeholder="Name" autocomplete="name">
-                        <p id="error-name" class="error-hidden">Use letters only.</p>
+                        <a href="" class="project-link" target="_blank"><i class="fas fa-globe"></i></a>
+                        <a href="" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
-                    <div>
-                        <input name="email" type="email" class="form-input" placeholder="Email" autocomplete="email">
-                        <p id="error-email" class="error-hidden">Provide correct email.</p>
-                    </div>
-                    <div>
-                        <textarea name="body" class="form-input" rows="8" placeholder="Message"></textarea>
-                    </div>
-                    <div>
-                        <button id="btn-submit" class="btn-submit">Send</button>
-                    </div>
-                </form>
-                <span id="spinner" class="spinner hidden">sending</span>
-                <span id="confirmation" class="confirmation hidden">
-                    <i class="fas fa-check-circle"></i>
-                    Thanks for your message.
-                </span>
-                <div id="form-error" class="form-error hidden">
-                    Oops! Something went wrong, please try again.
                 </div>
-            </section>
-        </div>
-    </div>
+            </article>
 
-    <!-- Scripts -->
+        </div>
+    </main>
+
+    <!-- Skills -->
+    <article id="skills" class="wrapper">
+        <div class="flex-wrapp">
+            <div>
+                <h4 class="wrapper-subtitle">Front-end</h4>
+                <ul class="list-main-skills">
+                    <li>
+                        <h5 class="skills-title">Technologie</h5>
+                        <ul class="list-sublist-skills">
+                            <li><span>HTML5</span> - używam nowych znaczników do tworzenia layotów stron.</li>
+                            <li><span>CSS3</span> - potrafię tworzyć responsywne strony i aplikacje internetowe używając media queries.</li>
+                            <li><span>JavaScript</span> - tworzę aplikacje frontendowe, które wykorzystują AJAX lub nowe funkcjonalności z ES6 (fetch) do komunikowania się z bazą danych lub z REST API.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5 class="skills-title">Frameworki/Biblioteki</h5>
+                        <ul class="list-sublist-skills">
+                            <li><span>jQuery</span> - potrafię manipulować elementami DOM wraz z animacjami</li>
+                            <li><span>Bootstrap</span> - tworzę responsywne layouty</li>
+                            <li><span>Masonry</span> - wykorzystuję do układania zdjęć różnych rozmiarów w siatce</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="wrapper-subtitle">Back-end</h4>
+                <ul class="list-main-skills">
+                    <li>
+                        <h5 class="skills-title">Technologie</h5>
+                        <ul class="list-sublist-skills">
+                            <li><span>PHP</span> - potrafię zaprojektować i napisać aplikację typu CMS</li>
+                            <li><span>MySql</span> - używam relacyjnych i nierelacyjnych baz danych w moich projektach</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h5 class="skills-title">Frameworki/Biblioteki</h5>
+                        <ul class="list-sublist-skills">
+                            <li><span>Laravel</span> - potrafię napisać aplikację typu CMS zgodnie z zasadami OOP i CRUD</li>
+                            <li><span>PHPMailer</span> - ułatwia mi pracę nad wysyłaniem maili z potwierdzeniem/resetowaniem hasła itp.</li>
+                            <li><span>Intervention</span> - bardzo pomocna biblioteka, która zmienia rozdzielczość zdjęć</li>
+                            <li><span>jenssegers</span> - używam do wykrywania rozmiaru wyświetlacza, dzięki temu aplikacja ładuje zdjęcia z odpowiednią rozdzielczością</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="wrapper-subtitle">Inne</h4>
+                <ul class="list-main-skills list-skills-last">
+                    <li><span>Git</span> - używam podstawowe komendy w konsoli do kontrolowania wersji tworzonej aplikacji lub strony</li>
+                    <li><span>MVC</span> - umiem oddzielać różne warstwy aplikacji, żeby łatwiej było zarządzać kodem i dodawać nowe funkcjonalności</li>
+                    <li><span>Programowanie obiektowe</span></li>
+                    <li><span>DRY</span> - nie koduję za pomocą ctrl+C, ctrl+V</li>
+                    <li><span>Refaktoryzacja kodu</span> - często wracam do wczęsniej napisanego kodu i staram się go ulepszyć</li>
+                    <li><span>Gimp</span> - podstawowa umiejętność obróbki grafiki, tworzenie logo, wycinanie elementów itp.</li>
+                    <li><span>Język angielski</span> - komunikatywny w mowie i piśmie, potrafię korzystać z dokumentacji technicznej</li>
+                </ul>
+            </div>
+        </div>
+    </article>
+    
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2 class="contact-title">Skontaktuj się</h2>
+        <p class="form-subtitle">Nie zapisuję adresu email. Potrzebny jest tylko do odpowiedzi na wiadomość.</p>
+        <div class="form-wrapp">
+            <form action="" method="post">
+                <div class="form-row">
+                    <label for="name" class="form-el">Imię</label>
+                    <input type="text" name="name" class="form-el">
+                </div>
+                <p class="form-error"></p>
+                <div class="form-row">
+                    <label for="email" class="form-el">Email</label>
+                    <input type="text" name="email" class="form-el">
+                </div>
+                <p class="form-error"></p>
+                <div class="form-row">
+                    <label for="body" class="form-el">Wiadomość</label>
+                    <textarea name="body" rows="10" class="form-el"></textarea>
+                </div>
+                <p class="form-error"></p>
+                <div class="form-row">
+                    <button type="submit" class="btn-form-submit">Wyślij</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="wrapper footer">
+        <p>Projekt i wykonanie strony Patryk Piecuch</p>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="./assets/jquery-3.4.1.min.js"></script>
     <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/Form/init.js" type="module"></script>
 </body>
 </html>

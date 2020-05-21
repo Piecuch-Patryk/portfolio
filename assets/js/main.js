@@ -1,50 +1,53 @@
-function togglePreventClick(){
-    if(el = document.querySelector('.prevent-click')){
-        el.classList.remove('prevent-click');
-    }else {
-        document.querySelector('.nav-list').classList.add('prevent-click');
-    }
-}
-function fadeOut(){
-    document.querySelector('.active').classList.remove('active');
-    document.querySelector('.link-active').classList.remove('link-active');
-}
+/*
+*   Scroll
+*/
+function scroll(e) {
+    const anchor = $(this).attr('href').split('#')[1];
+    const destination = $(`#${anchor}`).offset().top;
+    const navHeight = $('#nav-wrap').outerHeight();
+    const scrollVal = destination - navHeight;
 
-function fadeIn(str, linkEl){
-    document.getElementById(str).classList.add('active');
-    linkEl.classList.add('link-active');
-    togglePreventClick();
-    setContainerHeight();
-}
-
-function changeSection(e){
     e.preventDefault();
-    const name = this.getAttribute('href').split('#').pop();
-    // Prevent action when current one clicked.
-    if(this.classList.contains('link-active')) return;
-
-    togglePreventClick();
-    fadeOut();
-    setTimeout(() => fadeIn(name, this), 500);
-}
-function toggleNav(){
-    const links = document.querySelectorAll('.nav-link');
-    links.forEach((el, i) => el.addEventListener('click', changeSection));
+    $('html, body').animate({
+        scrollTop: `${scrollVal}px`,
+    }, 500);
 }
 
-// Set section height to the main container.
-function setContainerHeight(){
-    const id = document.querySelector('.active').getAttribute('id');
-    const el = document.getElementById(id);
-    const style = window.getComputedStyle(el);
-    const height = style.getPropertyValue('height');
-    const container = document.getElementById('container');
-    container.style.height = height;
+/*
+*   Toggle navigation
+*/
+function toggleNavigation() {
+    const $nav = $('#nav-wrap');
+    const $closeBtn = $('.inner-btn-toggle-nav');
+
+    if (!$($nav).hasClass('toggle-nav')) {
+        $($closeBtn).addClass('spin');
+        $($closeBtn).on('animationend', () => $($closeBtn).removeClass('spin'));
+    }else {
+        if ($($closeBtn).hasClass('spin')) $($closeBtn).removeClass('spin');
+    }
+    $($nav).toggleClass('toggle-nav');
+}
+
+/*
+*   Toggle modal
+*/
+function toggleModal() {
+    const $modal = $(this).closest('.project-wrap').find('.modal');
+    $($modal).toggleClass('animate');
 }
 
 
-document.addEventListener('DOMContentLoaded', function(){
-    setContainerHeight();
-    toggleNav();
+/*
+*   DOM loaded
+*/
+$(document).ready(() => {
+    // Scroll
+    $('a[data-link=true]').each((i, el) => $(el).on('click', scroll));
+
+    // Modal
+    $('button[data-toggle=modal]').each((i, el) => $(el).on('click', toggleModal));
+    
+    // Navigation
+    $('button[data-toggle=nav]').each((i, el) => $(el).on('click', toggleNavigation));
 });
-window.addEventListener('resize', setContainerHeight);
