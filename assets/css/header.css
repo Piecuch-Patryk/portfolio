@@ -58,8 +58,6 @@
     align-items: center;
     padding-bottom: 3rem;
 }
-.header-row .btn {
-}
 .header-row .btn:nth-of-type(1) {
     padding: .5rem 1rem;
     font-size: 1.5rem;
