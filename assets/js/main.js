@@ -17,16 +17,16 @@ function scroll(e) {
 *   Toggle navigation
 */
 function toggleNavigation() {
-    const $nav = $('#nav-wrap');
-    const $closeBtn = $('.inner-btn-toggle-nav');
+    const $nav = $('div[data-nav=drop]');
+    const $closeBtn = $('button[data-nav=close]');
 
-    if (!$($nav).hasClass('toggle-nav')) {
+    if (!$($nav).hasClass('show')) {
         $($closeBtn).addClass('spin');
         $($closeBtn).on('animationend', () => $($closeBtn).removeClass('spin'));
     }else {
         if ($($closeBtn).hasClass('spin')) $($closeBtn).removeClass('spin');
     }
-    $($nav).toggleClass('toggle-nav');
+    $($nav).toggleClass('show');
 }
 
 /*
@@ -49,5 +49,5 @@ $(document).ready(() => {
     $('button[data-toggle=modal]').each((i, el) => $(el).on('click', toggleModal));
     
     // Navigation
-    $('button[data-toggle=nav]').each((i, el) => $(el).on('click', toggleNavigation));
+    $('button[data-nav=toggle]').each((i, el) => $(el).on('click', toggleNavigation));
 });

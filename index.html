@@ -15,34 +15,47 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- nav -->
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <!-- animations -->
+    <link rel="stylesheet" href="./assets/css/animations.css">
 </head>
 <body>
+
     <!-- Navigation -->
     <div class="nav-bar">
-        <nav id="nav-wrap" class="nav-wrapp">
-            <ul class="nav-list-socials">
-                <li><a href="mailto:kontakt@patrykpiecuch.pl"><i class="fas fa-envelope"></i></a></li>
-                <li><a href="https://github.com/Piecuch-Patryk" target="_blank"><i class="fab fa-github-square"></i></a></li>
-            </ul>
+        <!-- logo -->
+        <div class="mobile-hidden">
+            <img src="./assets/img/logos/pp-logo.png" alt="Logo">
+        </div>
+        <!-- drop -->
+        <div class="nav-drop" data-nav="drop">
+            <div class="top-bar">
+                <span class="icon-wrap">
+                    <i class="fab fa-github"></i>
+                </span>
+                <!-- btn close -->
+                <button type="button" class="btn-close" data-nav="toggle">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <!-- nav el -->
             <ul class="nav-list">
-                <li class="nav-list-el"><a href="#projects" data-link=true>Projekty</a></li>
-                <li class="nav-list-el"><a href="#skills" data-link=true>Umiejętności</a></li>
-                <li class="nav-list-el"><a href="#contact" data-link=true>Kontakt</a></li>
+                <li class="nav-el"><a href="#header" class="nav-link" data-link=true>Główna</a></li>
+                <li class="nav-el"><a href="#projects" class="nav-link" data-link=true>Projekty</a></li>
+                <li class="nav-el"><a href="#skills" class="nav-link" data-link=true>Umiejętności</a></li>
+                <li class="nav-el"><a href="#contact" class="nav-link" data-link=true>Kontakt</a></li>
             </ul>
-            <button type="button" class="inner-btn-toggle-nav" data-toggle="nav"><i class="fas fa-times"></i></button>
-        </nav>
-        <button type="button" class="btn-toggle-nav" data-toggle="nav">
-            <span class="nav-btn-dot"></span>
-            <span class="nav-btn-dot"></span>
-            <span class="nav-btn-dot"></span>
+        </div>
+        <!-- btn open -->
+        <button type="button" class="btn-nav-open" data-nav="toggle">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
         </button>
     </div>
-    <div class="paralax-wrapp">
-        <!-- Logo -->
-        <div class="logo-wrapp">
-            <img src="./assets/img/logo-opacity-50.png" class="page-logo" alt="Patryk Piecuch logo">
-        </div>
 
+    <div class="paralax-wrapp">
         <!-- Header -->
         <header class="header">
             <h1 class="page-title">Witaj!</h1>

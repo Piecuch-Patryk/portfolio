@@ -1,0 +1,4 @@
+/* Animations */
+.spin {
+    transform: rotate(720deg);
+}
