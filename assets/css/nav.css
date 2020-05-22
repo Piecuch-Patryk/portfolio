@@ -29,6 +29,10 @@
     right: .5rem;
     background: none;
     border: none;
+    background-color: #fff;
+    padding: .2rem .4rem;
+    line-height: 13px;
+    border-radius: 5px;
     z-index: 99;
 }
 .dot {
