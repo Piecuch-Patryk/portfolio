@@ -4,7 +4,7 @@
 function scroll(e) {
     const anchor = $(this).attr('href').split('#')[1];
     const destination = $(`#${anchor}`).offset().top;
-    const navHeight = $('#nav-wrap').outerHeight();
+    const navHeight = $('.nav-bar').outerHeight();
     const scrollVal = destination - navHeight;
 
     e.preventDefault();
