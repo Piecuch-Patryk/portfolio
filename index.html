@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="./assets/css/nav.css">
     <!-- header -->
     <link rel="stylesheet" href="./assets/css/header.css">
+    <!-- projects -->
+    <link rel="stylesheet" href="./assets/css/projects.css">
     <!-- animations -->
     <link rel="stylesheet" href="./assets/css/animations.css">
 </head>
@@ -75,107 +77,53 @@
     </header>
 
     <!-- Main -->
-    <main id="projects" class="wrapper">
-        <div class="wrapper-inner">
+    <main id="projects" class="container">
+        
+        <!-- project -->
+        <article class="article">
+            <img src="./assets/img/Norella/Norella-main-page.gif" alt="Norella image">
+            
+            <h2 class="title">Norella</h2>
+            <p class="desc">Aplikacja internetowa napisana w Laravelu służąca do zarządzania treścią (CMS) dla studia urody - Norella.</p>
+            <p class="desc">Strona responsywna.</p>
 
-            <!-- Project -->
-            <article class="project-wrap">
-                <div class="modal">
-                    <div class="modal-inner">
-                        <img src="./assets/img/Norella/Norella-main-page.gif" class="project-image" alt="Zdjęcie projektu strony www">
-                        <h3 class="modal-inner-title">Norella - studio urody</h3>
-                        <p class="modal-inner-desc">Aplikacja internetowa napisana w Laravelu służąca do zarządzania treścią (CMS) dla studia urody - Norella.</p>
-                        <p class="modal-inner-desc">Logowanie dostępne tylko za pomocą zewnętrznego linku. Tylko administrator serwisu może zakłożyć nowe konto. Po zalogowaniu się użytkownik dodaje/edytuje lub usuwa oferty z listy.</p>
-                        <p class="modal-inner-desc">Goście odwiedzający stronę widzą całą ofertę i wizytówkę firmy z możliwością dodawania komentarzy bez logowania się.</p>
-                        <p class="modal-inner-desc">Strona responsywna.</p>
-                        <div class="modal-inner-links">
-                            <a href="" class="modal-inner-link-el" target="_blank">On-line</a>
-                            <a href="" class="modal-inner-link-el" target="_blank">Github</a>
-                        </div>
-                        <ul class="modal-logos-list">
-                            <li class="modal-logo-el">
-                                <!-- <img src="./assets/img/logos/laravel.png" alt=""> -->
-                            </li>
-                            <li class="modal-logo-el">
-                                <!-- <img src="./assets/img/logos/bootstrap.png" alt=""> -->
-                            </li>
-                            <li class="modal-logo-el">
-                                <!-- <img src="./assets/img/logos/masonry.png" alt=""> -->
-                            </li>
-                            <li class="modal-logo-el">
-                                <!-- <img src="./assets/img/logos/intervention.png" alt=""> -->
-                            </li>
-                            <li class="modal-logo-el no-img">
-                                jenssegers/agent
-                            </li>
-                        </ul>
-                        <button type="button" class="close-modal-btn" data-toggle="modal"><i class="fas fa-arrow-alt-circle-up"></i> Zwiń</button>
-                    </div>
-                    <button type="button" class="close-modal-btn-desktop" data-toggle="modal"><i class="fas fa-times"></i></button>
-                </div>
-                <h2 class="project-title">Norella - studio urody</h2>
-                <a href="https://norella.pl" target="_blank">
-                    <img src="./assets/img/Norella/norella.png" class="project-image" alt="Zdjęcie projektu strony www">
-                </a>
-                <div class="project-row">
-                    <button type="button" class="open-modal-btn" data-toggle="modal">Szczegóły projektu</button>
-                    <div>
-                        <a href="" class="project-link" target="_blank"><i class="fas fa-globe"></i></a>
-                        <a href="" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </article>
+            <div class="row">
+                <a href="" class="link-icon"><i class="fas fa-globe"></i></a>
+                <button type="button" class="btn btn-light" data-modal="toggle" data-modal-id="modal-1">Więcej o projekcie</button>
+                <a href="" class="link-icon"><i class="fab fa-github"></i></a>
+            </div>
+        </article>
 
-            <!-- Project -->
-            <article class="project-wrap">
-                <div class="modal">
-                    <div class="modal-inner">
-                        <img src="./assets/img/Norella/Norella-main-page.gif" class="project-image" alt="Zdjęcie projektu strony www">
-                        <h3 class="modal-inner-title">Norella - studio urody</h3>
-                        <p class="modal-inner-desc">Aplikacja internetowa napisana w Laravelu służąca do zarządzania treścią (CMS) dla studia urody - Norella.</p>
-                        <p class="modal-inner-desc">Logowanie dostępne tylko za pomocą zewnętrznego linku. Tylko administrator serwisu może zakłożyć nowe konto. Po zalogowaniu się użytkownik dodaje/edytuje lub usuwa oferty z listy.</p>
-                        <p class="modal-inner-desc">Goście odwiedzający stronę widzą całą ofertę i wizytówkę firmy z możliwością dodawania komentarzy bez logowania się.</p>
-                        <p class="modal-inner-desc">Strona responsywna.</p>
-                        <div class="modal-inner-links">
-                            <a href="" class="modal-inner-link-el" target="_blank">On-line</a>
-                            <a href="" class="modal-inner-link-el" target="_blank">Github</a>
-                        </div>
-                        <ul class="modal-logos-list">
-                            <li class="modal-logo-el">
-                                <img src="./assets/img/logos/laravel.png" alt="">
-                            </li>
-                            <li class="modal-logo-el">
-                                <img src="./assets/img/logos/bootstrap.png" alt="">
-                            </li>
-                            <li class="modal-logo-el">
-                                <img src="./assets/img/logos/masonry.png" alt="">
-                            </li>
-                            <li class="modal-logo-el">
-                                <img src="./assets/img/logos/intervention.png" alt="">
-                            </li>
-                            <li class="modal-logo-el no-img">
-                                jenssegers/agent
-                            </li>
-                        </ul>
-                        <button type="button" class="close-modal-btn" data-toggle="modal"><i class="fas fa-arrow-alt-circle-up"></i> Zwiń</button>
-                    </div>
-                    <button type="button" class="close-modal-btn-desktop" data-toggle="modal"><i class="fas fa-times"></i></button>
-                </div>
-                <h2 class="project-title">Norella - studio urody</h2>
-                <a href="https://patrykpiecuch.pl/projects/gibbet" target="_blank">
-                    <img src="./assets/img/Gibbet/gibbet.png" class="project-image" alt="Zdjęcie projektu strony www">
-                </a>
-                <div class="project-row">
-                    <button type="button" class="open-modal-btn" data-toggle="modal">Szczegóły projektu</button>
-                    <div>
-                        <a href="" class="project-link" target="_blank"><i class="fas fa-globe"></i></a>
-                        <a href="" class="project-link" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </article>
-
-        </div>
+        <!-- project -->
     </main>
+
+    <!-- Modals -->
+    <div id="modal-1" class="modal">
+        <div class="sticky-row">
+            <button type="button" class="btn-close" data-modal="toggle" data-modal-id="modal-1">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <img src="./assets/img/Norella/norella.png" alt="Project gif">
+
+        <p class="desc">Aplikacja internetowa napisana w Laravelu służąca do zarządzania treścią (CMS) dla studia urody - Norella.</p>
+        <p class="desc">Logowanie dostępne tylko za pomocą zewnętrznego linku. Tylko administrator serwisu może zakłożyć nowe konto. Po zalogowaniu się użytkownik dodaje/edytuje lub usuwa oferty z listy.</p>
+        <p class="desc">Goście odwiedzający stronę widzą całą ofertę i wizytówkę firmy z możliwością dodawania komentarzy bez logowania się.</p>
+        <p class="desc">Strona responsywna.</p>
+
+        <ul class="links-row">
+            <li><a href="" class="btn btn-primary">Odwiedź stronę</a></li>
+            <li><a href="" class="btn btn-light-outline">GitHub</a></li>
+        </ul>
+
+        <ul class="flex-row">
+            <li class="flex-el"><img src="./assets/img/logos/laravel.png" alt=""></li>
+            <li class="flex-el"><img src="./assets/img/logos/bootstrap.png" alt=""></li>
+            <li class="flex-el"><img src="./assets/img/logos/masonry.png" alt=""></li>
+            <li class="flex-el"><img src="./assets/img/logos/intervention.png" alt=""></li>
+            <li class="flex-el"><img src="./assets/img/logos/intervention.png" alt=""></li>
+        </ul>
+    </div>
 
     <!-- Skills -->
     <article id="skills" class="wrapper">
@@ -237,6 +185,8 @@
         </div>
     </article>
     
+    
+
     <!-- Contact -->
     <section id="contact" class="contact">
         <h2 class="contact-title">Skontaktuj się</h2>

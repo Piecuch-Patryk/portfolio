@@ -63,7 +63,11 @@ textarea {
     background-color: var(--primary-color);
     color: var(--text-light);
 }
+.btn-light {
+    background-color: #fff;
+    color: var(--primary-color);
+}
 .btn-light-outline {
-    background-color: #ddd;
     color: var(--text-dark);
+    text-decoration: underline;
 }

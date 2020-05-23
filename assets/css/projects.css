@@ -1,0 +1,96 @@
+/* Projects */
+
+.container {
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+}
+.article {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    line-height: 1.5rem;
+    padding-bottom: 1rem;
+}
+.title {
+    font-size: 2rem;
+    padding: 2rem;
+}
+.desc {
+    padding: 0 1rem 1rem;
+}
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+.row .btn {
+    border-radius: 30px;
+}
+.link-icon {
+    height: 2rem;
+    width: 2rem;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    border-radius: 100%;
+    background-color: #fff;
+}
+.link-icon:nth-of-type(1) {
+    color: var(--primary-color);
+}
+.link-icon:nth-of-type(2) {
+    color: #333;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-bottom: 1rem;
+    background-color: #fff;
+    color: var(--text-dark);
+    z-index: -1;
+    opacity: 0;
+    transform: translate3d(0, -10%, 0);
+    transition: all .2s linear;
+}
+.show {
+    z-index: 50;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+.sticky-row {
+    position: sticky;
+    top: 0;
+    text-align: right;
+}
+.modal .btn-close {
+    font-size: 1rem;
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
+    color: var(--primary-color);
+}
+.links-row {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 1rem;
+}
+.links-row .btn {
+    font-weight: 700;
+    padding: .5rem 1rem;
+}
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.flex-el {
+    flex-basis: 20%;
+    margin: 1rem;
+}

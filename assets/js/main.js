@@ -33,8 +33,8 @@ function toggleNavigation() {
 *   Toggle modal
 */
 function toggleModal() {
-    const $modal = $(this).closest('.project-wrap').find('.modal');
-    $($modal).toggleClass('animate');
+    const $modal = $(this).attr('data-modal-id');
+    $(`#${$modal}`).toggleClass('show');
 }
 
 
@@ -46,7 +46,7 @@ $(document).ready(() => {
     $('a[data-link=true]').each((i, el) => $(el).on('click', scroll));
 
     // Modal
-    $('button[data-toggle=modal]').each((i, el) => $(el).on('click', toggleModal));
+    $('button[data-modal=toggle]').each((i, el) => $(el).on('click', toggleModal));
     
     // Navigation
     $('button[data-nav=toggle]').each((i, el) => $(el).on('click', toggleNavigation));
