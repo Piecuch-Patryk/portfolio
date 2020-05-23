@@ -1,6 +1,7 @@
 /* Skills */
 .aside {
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 2;
     padding: 2rem;
     background-color: #fff;
@@ -45,4 +46,77 @@
 }
 .list-lang-el:nth-of-type(9) {
     color: #673F99;
+}
+
+/* Skills */
+.skills {
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    padding: 0 1rem 2rem;
+}
+.skills .title-md {
+    padding: 2rem 0;
+    text-align: center;
+    color: var(--primary-color);
+}
+.skills .sub-title {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-bottom: 2rem;
+}
+.skills .row {
+    display: block;
+    padding: 0 1rem;
+}
+.skills .title-lg {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--primary-color);
+    padding: 2rem 0;
+}
+.skill-el {
+    margin-bottom: 1rem;
+    line-height: 1.2rem;
+}
+.text-coloured {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+.row:nth-of-type(1) .skill-el:nth-of-type(1) .text-coloured {
+    color: #E96228;
+}
+.row:nth-of-type(1) .skill-el:nth-of-type(2) .text-coloured {
+    color: #1A70B5;
+}
+.row:nth-of-type(1) .skill-el:nth-of-type(3) .text-coloured {
+    color: #F0D91D;
+}
+.row:nth-of-type(1) .skill-el:nth-of-type(4) .text-coloured {
+    color: #0865A7;
+}
+.row:nth-of-type(1) .skill-el:nth-of-type(5) .text-coloured {
+    color: #673F99;
+}
+
+.row:nth-of-type(2) .skill-el:nth-of-type(1) .text-coloured {
+    color: #777BB3;
+}
+.row:nth-of-type(2) .skill-el:nth-of-type(2) .text-coloured {
+    color: #EB8D11;
+}
+.row:nth-of-type(2) .skill-el:nth-of-type(2) .text-coloured > .text-coloured-inner {
+    color: #00728B;
+}
+.row:nth-of-type(2) .skill-el:nth-of-type(3) .text-coloured {
+    color: #EC4E43;
+}
+.row:nth-of-type(2) .skill-el:nth-of-type(4) .text-coloured {
+    color: #f9cd6e;
+}
+.row:nth-of-type(2) .skill-el:nth-of-type(5) .text-coloured {
+    color: #3e5065;
 }
