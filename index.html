@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="./assets/css/contact.css">
     <!-- footer -->
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <!-- media -->
+    <link rel="stylesheet" href="./assets/css/media.css">
     <!-- animations -->
     <link rel="stylesheet" href="./assets/css/animations.css">
 </head>
@@ -36,11 +38,11 @@
     <div class="nav-bar">
         <!-- logo -->
         <div class="mobile-hidden">
-            <img src="./assets/img/logos/pp-logo.png" alt="Logo">
+            <img src="./assets/img/logos/pp-logo.png" class="logo" alt="Logo">
         </div>
         <!-- drop -->
         <div class="nav-drop" data-nav="drop">
-            <div class="top-bar">
+            <div class="top-bar desktop-hidden">
                 <span class="icon-wrap">
                     <i class="fab fa-github"></i>
                 </span>
@@ -58,7 +60,7 @@
             </ul>
         </div>
         <!-- btn open -->
-        <button type="button" class="btn-nav-open" data-nav="toggle">
+        <button type="button" class="btn-nav-open desktop-hidden" data-nav="toggle">
             <span class="dot"></span>
             <span class="dot"></span>
             <span class="dot"></span>
@@ -87,16 +89,34 @@
         
         <!-- project -->
         <article class="article">
-            <img src="./assets/img/Norella/Norella-main-page.gif" alt="Norella image">
-            
-            <h2 class="title">Norella</h2>
-            <p class="desc">Aplikacja internetowa napisana w Laravelu służąca do zarządzania treścią (CMS) dla studia urody - Norella.</p>
-            <p class="desc">Strona responsywna.</p>
+            <div class="article-row">
+                <img src="./assets/img/Norella/Norella-main-page.gif" class="main-img" alt="Norella image">
+                
+                <div class="content-wrap">
+                    <h2 class="title">Norella</h2>
+                    <p class="desc">Aplikacja internetowa napisana w Laravelu służąca do zarządzania treścią (CMS) dla studia urody - Norella.</p>
+                    <p class="desc mobile-hidden">Logowanie dostępne tylko za pomocą zewnętrznego linku. Tylko administrator serwisu może zakłożyć nowe konto. Po zalogowaniu się użytkownik dodaje/edytuje lub usuwa oferty z listy.</p>
+                    <p class="desc mobile-hidden">Goście odwiedzający stronę widzą całą ofertę i wizytówkę firmy z możliwością dodawania komentarzy bez logowania się.</p>
+                    <p class="desc mobile-hidden">Strona w pełni responsywna.</p>
 
-            <div class="row">
-                <a href="" class="link-icon"><i class="fas fa-globe"></i></a>
-                <button type="button" class="btn btn-light" data-modal="toggle" data-modal-id="modal-1">Więcej o projekcie</button>
-                <a href="" class="link-icon"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="row desktop-hidden">
+                    <a href="" class="link-icon"><i class="fas fa-globe"></i></a>
+                    <button type="button" class="btn btn-light" data-modal="toggle" data-modal-id="modal-1">Więcej o projekcie</button>
+                    <a href="" class="link-icon"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="mobile-hidden article-row">
+                <ul class="img-list">
+                    <li class="list-el"><img src="./assets/img/Norella/norella.png" alt="" class="img-el"></li>
+                    <li class="list-el"><img src="./assets/img/Norella/Norella-laptop.png" alt="" class="img-el"></li>
+                    <li class="list-el"><img src="./assets/img/Norella/Norella-laptop.png" alt="" class="img-el"></li>
+                    <li class="list-el"><img src="./assets/img/Norella/Norella-laptop.png" alt="" class="img-el"></li>
+                </ul>
+                <ul class="links-list">
+                    <li class="list-el"><a href="" class="btn btn-light"><i class="far fa-eye"></i> On-line</a></li>
+                    <li class="list-el"><a href="" class="btn btn-light-outline"><i class="fab fa-github-alt"></i> GitHub</a></li>
+                </ul>
             </div>
         </article>
 
