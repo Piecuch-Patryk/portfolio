@@ -18,7 +18,7 @@ function scroll(e) {
 */
 function toggleNavigation() {
     const $nav = $('div[data-nav=drop]');
-    const $closeBtn = $('button[data-nav=close]');
+    const $closeBtn = $('button[data-btn=close]');
 
     if (!$($nav).hasClass('show')) {
         $($closeBtn).addClass('spin');
