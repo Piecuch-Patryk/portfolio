@@ -1,0 +1,48 @@
+/* Skills */
+.aside {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    background-color: #fff;
+}
+.list-languages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.list-lang-el {
+    margin: .5rem 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.list-lang-el:nth-of-type(1) {
+    color: #E96228;
+}
+.list-lang-el:nth-of-type(2) {
+    color: #F0D91D;
+}
+.list-lang-el:nth-of-type(3) {
+    color: #EB8D11;
+}
+.list-lang-el:nth-of-type(3) span {
+    color: #00728B;
+}
+.list-lang-el:nth-of-type(4) {
+    color: #777BB3;
+}
+.list-lang-el:nth-of-type(5) {
+    color: #31322F;
+}
+.list-lang-el:nth-of-type(6) {
+    color: #1A70B5;
+}
+.list-lang-el:nth-of-type(7) {
+    color: #EC4E43;
+}
+.list-lang-el:nth-of-type(8) {
+    color: #0865A7;
+}
+.list-lang-el:nth-of-type(9) {
+    color: #673F99;
+}
