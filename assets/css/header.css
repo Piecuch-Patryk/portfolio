@@ -38,6 +38,7 @@
     padding: 1rem;
     letter-spacing: 2px;
     opacity: .5;
+    color: var(--primary-color);
 }
 .sub-heading {
     padding: 0 1rem;
