@@ -62,12 +62,24 @@ textarea {
 .btn-primary {
     background-color: var(--primary-color);
     color: var(--text-light);
+    transition: filter .3s ease-in-out;
+}
+.btn-primary:hover {
+    filter: brightness(.9);
 }
 .btn-light {
     background-color: #fff;
     color: var(--primary-color);
+    transition: filter .3s ease-in-out;
+}
+.btn-light:hover {
+    filter: brightness(.9);
 }
 .btn-light-outline {
     color: var(--text-dark);
     text-decoration: underline;
+    transition: background-color .3s ease-in-out;
+}
+.btn-light-outline:hover {
+    background-color: #eee;
 }

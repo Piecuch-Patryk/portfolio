@@ -83,5 +83,24 @@
     padding-bottom: 1rem;
 }
 .nav-el {
+    position: relative;
     padding: 1rem;
+    transition: filter .3s ease-in-out;
+}
+.nav-el:hover {
+    filter: brightness(.8);
+}
+.nav-el::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -.5rem;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 0;
+    background-color: var(--primary-color);
+    transition: height .3s ease-in-out;
+}
+.nav-el:hover::after {
+    height: 100%;
 }

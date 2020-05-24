@@ -63,6 +63,11 @@ textarea.form-el:focus {
     position: relative;
     margin: 0 2rem;
     font-size: 2rem;
+    transition: color .3s ease-in-out;
+}
+.form-links .link-el:hover {
+    color: var(--text-light);
+    transform: scale(1.1);
 }
 .form-links .link-el::before {
     content: '';
@@ -72,6 +77,10 @@ textarea.form-el:focus {
     width: 300px;
     height: 1px;
     background-color: #fff;
+    transition: height .3s ease-in-out;
+}
+.form-links .link-el:hover::before {
+    height: 2px;
 }
 .form-links .list-el:nth-of-type(1) .link-el::before {
     left: -302px;
