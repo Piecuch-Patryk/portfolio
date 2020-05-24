@@ -80,12 +80,14 @@
     color: var(--text-dark);
     transition: all 1s ease-in-out;
 }
+.nav-el {
+    margin: 1rem 0;
+}
 .nav-list {
     padding-bottom: 1rem;
 }
 .nav-link {
     position: relative;
-    padding: 1rem;
     transition: all .3s ease-in-out;
 }
 .nav-link:hover {

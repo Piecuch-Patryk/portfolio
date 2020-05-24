@@ -54,6 +54,7 @@
     z-index: 2;
     background-color: #fff;
     color: var(--primary-color);
+    border-top: 2px solid var(--primary-color);
     padding: 0 1rem 2rem;
 }
 .skills .title-md {

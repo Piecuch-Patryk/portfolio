@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,7 +38,9 @@
     <div class="nav-bar">
         <!-- logo -->
         <div class="mobile-hidden">
-            <img src="./assets/img/logos/pp-logo.png" class="logo" alt="Logo">
+            <a href="#header" data-link="true">
+                <img src="./assets/img/logos/pp-logo.png" class="logo" alt="Logo">
+            </a>
         </div>
         <!-- drop -->
         <div class="nav-drop" data-nav="drop">
@@ -53,10 +55,10 @@
             </div>
             <!-- nav el -->
             <ul class="nav-list">
-                <li class="nav-el"><a href="#header" class="nav-link" data-link=true>Główna</a></li>
-                <li class="nav-el"><a href="#projects" class="nav-link" data-link=true>Projekty</a></li>
-                <li class="nav-el"><a href="#skills" class="nav-link" data-link=true>Umiejętności</a></li>
-                <li class="nav-el"><a href="#contact" class="nav-link" data-link=true>Kontakt</a></li>
+                <li class="nav-el"><a href="#header" class="nav-link active-link" data-link="true">Główna</a></li>
+                <li class="nav-el"><a href="#projects" class="nav-link" data-link="true">Projekty</a></li>
+                <li class="nav-el"><a href="#skills" class="nav-link" data-link="true">Umiejętności</a></li>
+                <li class="nav-el"><a href="#contact" class="nav-link" data-link="true">Kontakt</a></li>
             </ul>
         </div>
         <!-- btn open -->
@@ -68,7 +70,7 @@
     </div>
 
     <!-- Header -->
-    <header class="header">
+    <header id="header" class="header">
         <!-- images -->
         <ul class="header-img-list">
             <li class="img-list-el"></li>
@@ -79,7 +81,7 @@
         <h1 class="heading">Cześć!</h1>
         <p class="sub-heading">Nazywam się <span class="text-highlighted">Patryk Piecuch</span>. Tworzę strony i aplikacje internetowe w oparciu o najnowsze technologie.</p>
         <div class="header-row">
-            <a href="#projects" data-link=true class="btn btn-primary">Portfolio</a>
+            <button href="#projects" data-link="true" data-link-btn="true" class="btn btn-primary">Portfolio</button>
         </div>
     </header>
 

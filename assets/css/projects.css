@@ -8,6 +8,7 @@
 .article {
     background-color: var(--primary-color);
     color: var(--text-light);
+    border-top: 2px solid var(--primary-color);
     text-align: center;
     line-height: 1.5rem;
     padding-bottom: 1rem;

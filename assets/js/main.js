@@ -4,10 +4,15 @@
 function scroll(e) {
     const anchor = $(this).attr('href').split('#')[1];
     const destination = $(`#${anchor}`).offset().top;
-    const navHeight = $('.nav-bar').outerHeight();
-    const scrollVal = destination - navHeight;
+    const $isThisBtn = $(this).attr('data-link-btn');
+    let scrollVal;
 
+    if (anchor === 'header') scrollVal = 0;
+    else scrollVal = destination;
+
+    if (!$isThisBtn) toggleNavigation();
     e.preventDefault();
+    
     $('html, body').animate({
         scrollTop: `${scrollVal}px`,
     }, 500);
@@ -43,7 +48,7 @@ function toggleModal() {
 */
 $(document).ready(() => {
     // Scroll
-    $('a[data-link=true]').each((i, el) => $(el).on('click', scroll));
+    $('[data-link=true]').each((i, el) => $(el).on('click', scroll));
 
     // Modal
     $('button[data-modal=toggle]').each((i, el) => $(el).on('click', toggleModal));
