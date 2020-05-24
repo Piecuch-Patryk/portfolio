@@ -53,18 +53,17 @@
     position: relative;
     z-index: 2;
     background-color: #fff;
+    color: var(--primary-color);
     padding: 0 1rem 2rem;
 }
 .skills .title-md {
     padding: 2rem 0;
     text-align: center;
-    color: var(--primary-color);
 }
 .skills .sub-title {
     font-size: 1.2rem;
     text-align: center;
     font-weight: 700;
-    color: var(--primary-color);
     padding-bottom: 2rem;
 }
 .skills .row {
@@ -74,7 +73,6 @@
 .skills .title-lg {
     font-size: 3rem;
     text-align: center;
-    color: var(--primary-color);
     padding: 2rem 0;
 }
 .skill-el {

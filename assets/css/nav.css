@@ -1,8 +1,9 @@
 /* Page navigation */
 
 .nav-bar {
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
     z-index: 50;
 }
 .nav-drop {
@@ -77,20 +78,21 @@
     border: none;
     font-size: 1.5rem;
     color: var(--text-dark);
-    transition: all 1s linear;
+    transition: all 1s ease-in-out;
 }
 .nav-list {
     padding-bottom: 1rem;
 }
-.nav-el {
+.nav-link {
     position: relative;
     padding: 1rem;
-    transition: filter .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
-.nav-el:hover {
-    filter: brightness(.8);
+.nav-link:hover {
+    background-color: var(--primary-color);
+    color: var(--text-light);
 }
-.nav-el::after {
+.nav-link::after {
     content: '';
     position: absolute;
     top: 50%;
@@ -101,6 +103,6 @@
     background-color: var(--primary-color);
     transition: height .3s ease-in-out;
 }
-.nav-el:hover::after {
+.nav-link:hover::after {
     height: 100%;
 }
