@@ -5,6 +5,14 @@
     --text-dark: #333333;
 }
 
+/* Kalam Regular */
+@font-face {
+    font-family: "Kalam-Regular";
+    src: url("../fonts/Kalam/Kalam-Regular.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
 *,
 *::before,
 *::after {
@@ -20,7 +28,7 @@
 body {
     position: relative;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Kalam-Regular', 'sans-serif';
     color: var(--text-dark);
     z-index: 0;
 }
