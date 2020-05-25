@@ -208,17 +208,6 @@
         transform: scale(1.5);
     }
 
-    /* Aside */
-    .aside {
-        /* background-color: var(--primary-color); */
-        background-color: #fff;
-        padding: 3rem;
-    }
-    .list-lang-el {
-        padding: 2rem;
-        font-size: 2rem;
-    }
-
     /* Skills */
     .skills {
         display: flex;
