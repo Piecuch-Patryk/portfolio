@@ -16,22 +16,24 @@
     background-size: cover;
     background-position: center;
     border: 2px solid var(--primary-color);
-    border-radius: 5px;
+    border-radius: 10px;
     transition: all .5s linear;
 }
 .img-list-el:nth-of-type(1) {
-    background-image: url("../img/Norella/Norella-laptop.png");
+    background-image: url("../img/Norella/norella-mobile.png");
     transform: translate3d(50%, -5%, 0) rotate(-20deg);
 }
 .img-list-el:nth-of-type(2) {
     height: 100px;
     width: 160px;
     background-image: url("../img/Gibbet/Gibbet-laptop.png");
-    transform: translate3d(140%, -90%, 0) rotate(-5deg) scale(.8);
+    transform: translate3d(130%, -90%, 0) rotate(-5deg) scale(.8);
 }
 .img-list-el:nth-of-type(3) {
-    background-image: url("../img/Gibbet/Gibbet-laptop.png");
-    transform: translate3d(270%, -50%, 0) rotate(15deg) scale(.9);
+    background-image: url("../img/Prosta/Prosta-main-page.png");
+    transform: translate3d(300%, -40%, 0) rotate(15deg) scale(.9);
+    height: 130px;
+    width: 75px;
 }
 .heading {
     font-size: 3rem;
