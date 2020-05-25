@@ -5,6 +5,7 @@ function scroll(e) {
     const anchor = $(this).attr('href').split('#')[1];
     const destination = $(`#${anchor}`).offset().top;
     const $isThisBtn = $(this).attr('data-link-btn');
+    const activeClassName = 'active-link';
     let scrollVal;
 
     if (anchor === 'header') scrollVal = 0;
@@ -13,6 +14,9 @@ function scroll(e) {
     if (!$isThisBtn) toggleNavigation();
     e.preventDefault();
     
+    $(`.${activeClassName}`).removeClass(activeClassName);
+    $(this).toggleClass(activeClassName);
+
     $('html, body').animate({
         scrollTop: `${scrollVal}px`,
     }, 500);

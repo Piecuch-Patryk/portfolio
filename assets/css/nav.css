@@ -90,10 +90,17 @@
     position: relative;
     transition: all .3s ease-in-out;
 }
+.active-link {
+    position: relative;
+}
+.nav-link.active-link,
 .nav-link:hover {
     background-color: var(--primary-color);
     color: var(--text-light);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
+.active-link::after,
 .nav-link::after {
     content: '';
     position: absolute;
@@ -104,6 +111,9 @@
     height: 0;
     background-color: var(--primary-color);
     transition: height .3s ease-in-out;
+}
+.active-link::after {
+    height: 100%;
 }
 .nav-link:hover::after {
     height: 100%;

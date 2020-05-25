@@ -83,10 +83,6 @@
         background-color: #fff;
         font-weight: 700;
     }
-    .nav-link:hover {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-    }
 
     /* Header */
     .header {
