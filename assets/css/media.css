@@ -214,10 +214,6 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: stretch;
-
-        background-color: var(--primary-color);
-        color: var(--text-light);
-        border-color: #fff;
     }
     .skills .title-md {
         flex-basis: 60%;
@@ -234,11 +230,12 @@
         background-color: #fff;
         color: var(--text-dark);
         border-radius: 20px;
-        transform: scale(.9);
+        transform: scale(.95);
         transition: transform .2s ease-in-out;
     }
     .skills .row:hover {
         transform: scale(1);
+        box-shadow: 0 0 5px 0 var(--primary-color);
     }
     .skills .row:last-of-type {
         flex-basis: 75%;
@@ -250,11 +247,11 @@
 
     /* Contact */
     .contact {
-        background-color: #fff;
         text-align: center;
     }
     .form {
         width: 50%;
+        margin-bottom: 2rem;
     }
     .form-error {
         text-align: left;
