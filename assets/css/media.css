@@ -151,6 +151,9 @@
     .half {
         padding: 2rem;
     }
+    .half:first-of-type {
+        flex-basis: 80%;
+    }
     .half:last-of-type {
         align-self: flex-end;
         padding: 0;
@@ -160,7 +163,7 @@
         transition: transform .3s ease-in-out;
     }
     .half:last-of-type img:hover {
-        transform: scale(1.4);
+        transform: scale(1.2);
     }
     .title {
         padding-left: 1rem;
