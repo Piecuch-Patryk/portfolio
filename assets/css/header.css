@@ -11,8 +11,9 @@
     height: 35vh;
 }
 .img-list-el {
-    height: 130px;
-    width: 75px;
+    position: absolute;
+    height: 35%;
+    width: 30%;
     background-size: cover;
     background-position: center;
     border: 2px solid var(--primary-color);
@@ -21,19 +22,21 @@
 }
 .img-list-el:nth-of-type(1) {
     background-image: url("../img/Norella/norella-mobile.png");
-    transform: translate3d(50%, -5%, 0) rotate(-20deg);
+    top: -5%;
+    left: 0%;
+    transform: rotate(-20deg);
 }
 .img-list-el:nth-of-type(2) {
-    height: 100px;
-    width: 160px;
     background-image: url("../img/Gibbet/Gibbet-laptop.png");
-    transform: translate3d(130%, -90%, 0) rotate(-5deg) scale(.8);
+    top: 5%;
+    left: 35%;
+    transform: rotate(10deg);
 }
 .img-list-el:nth-of-type(3) {
     background-image: url("../img/Prosta/Prosta-main-page.png");
-    transform: translate3d(300%, -40%, 0) rotate(15deg) scale(.9);
-    height: 130px;
-    width: 75px;
+    top: 25%;
+    left: 70%;
+    transform: rotate(-10deg);
 }
 .heading {
     font-size: 3rem;

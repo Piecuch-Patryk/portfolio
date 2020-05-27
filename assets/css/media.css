@@ -3,24 +3,24 @@
 /* tablet */
 @media screen and (min-width: 760px) {
     .header-img-list {
-        height: 50vh;
+        height: 40vh;
     }
     .img-list-el {
-        height: 360px;
-        width: 280px;
+        height: 40%;
     }
     .img-list-el:nth-of-type(1) {
-        transform: translate3d(20%, -10%, 0) rotate(-20deg);
+        top: 5%;
+        transform: rotate(-20deg);
+        background-image: url("../img/Norella/norella-offers.png");
     }
     .img-list-el:nth-of-type(2) {
-        height: 200px;
-        width: 300px;
-        transform: translate3d(130%, -130%, 0) rotate(-5deg) scale(1.2);
+        top: 15%;
+        transform: rotate(-5deg);
+        background-image: url("../img/Gibbet/Gibbet-laptop.png");
     }
     .img-list-el:nth-of-type(3) {
-        height: 360px;
-        width: 280px;
-        transform: translate3d(150%, -70%, 0) rotate(15deg) scale(.9);
+        top: 45%;
+        transform: rotate(15deg);
     }
     .sub-heading {
         width: 65%;
@@ -90,22 +90,20 @@
         padding: 0 2rem;
     }
     .header-img-list {
-        height: 40vh;
+        height: 50vh;
     }
     .img-list-el {
-        height: 300px;
-        width: 460px;
+        width: 40%;
     }
     .img-list-el:nth-of-type(1) {
-        transform: translate3d(50%, -15%, 0) rotate(-10deg) scale(.8);
+        transform: rotate(-10deg);
     }
     .img-list-el:nth-of-type(2) {
-        height: 300px;
-        width: 460px;
-        transform: translate3d(170%, -100%, 0) rotate(5deg) scale(1);
+        transform: rotate(5deg);
     }
     .img-list-el:nth-of-type(3) {
-        transform: translate3d(240%, -80%, 0) rotate(-15deg) scale(.9);
+        transform: rotate(-15deg);
+        left: 60%;
     }
     .heading {
         font-size: 3rem;
@@ -266,34 +264,8 @@
     }
 }
 
-/* desktop */
-@media screen and (min-width: 1500px) {
-    .header-img-list {
-        height: 50vh;
-    }
-    .img-list-el {
-        height: 400px;
-        width: 600px;
-    }
-    .img-list-el:nth-of-type(1) {
-        transform: translate3d(20%, -10%, 0) rotate(-10deg) scale(1);
-    }
-    .img-list-el:nth-of-type(2) {
-        /* height: 300px; */
-        /* width: 460px; */
-        transform: translate3d(200%, -100%, 0) rotate(5deg) scale(1.2);
-    }
-    .img-list-el:nth-of-type(3) {
-        transform: translate3d(340%, -50%, 0) rotate(-15deg) scale(.9);
-    }
-}
-
 /* XL desktop */
 @media screen and (min-width: 2000px) {
-    body {
-        max-width: 1500px;
-        margin: auto;
-    }
     .header {
         min-height: auto;
         padding-bottom: 4rem;
