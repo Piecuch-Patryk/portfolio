@@ -59,6 +59,16 @@ textarea.form-el:focus {
     font-size: .8rem;
     padding: .2rem 1rem;
 }
+.modal-form {
+    padding: 1rem;
+    display: none;
+}
+.form-info-success {
+    color: green;
+}
+.form-info-error {
+    color: red;
+}
 .form-links {
     display: flex;
     justify-content: center;

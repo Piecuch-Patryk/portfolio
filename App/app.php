@@ -11,5 +11,5 @@ if($validation->all()) {
     $mail = new Mail;
     $mail->send();
 }else {
-    die('false');
+    echo json_encode('false');
 }

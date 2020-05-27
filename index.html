@@ -53,7 +53,7 @@
             </div>
             <!-- nav el -->
             <ul class="nav-list">
-                <li class="nav-el"><a href="#header" class="nav-link active-link" data-link="true">Główna</a></li>
+                <li class="nav-el"><a href="#header" class="nav-link" data-link="true">Główna</a></li>
                 <li class="nav-el"><a href="#projects" class="nav-link" data-link="true">Projekty</a></li>
                 <li class="nav-el"><a href="#skills" class="nav-link" data-link="true">Umiejętności</a></li>
                 <li class="nav-el"><a href="#contact" class="nav-link" data-link="true">Kontakt</a></li>
@@ -295,24 +295,30 @@
     
     <!-- Contact -->
     <section id="contact" class="contact">
-        <form action="" method="post" class="form">
+        <form id="contact-form" action="./App/app.php" method="post" class="form">
+            <div id="form-error" class="modal-form form-info-error">
+                <p>Ups! Coś się zepsuło. Proszę spróbować później.</p>
+            </div>
+            <div id="form-success" class="modal-form form-info-success">
+                <p>Twoja wiadomość została wysłana.</p>
+            </div>
             <p class="sub-title">Email potrzebny tylko do odpowiedzi.</p>
             <p class="sub-title"><span>*</span> wszystkie pola są wymagane</p>
             <div>
                 <label for="name" class="form-el">Imię</label>
                 <input type="text" name="name" class="form-el">
             </div>
-            <p class="form-error"></p>
+            <p id="e_name" class="form-error"></p>
             <div>
                 <label for="email" class="form-el">Email</label>
                 <input type="text" name="email" class="form-el">
             </div>
-            <p class="form-error"></p>
+            <p id="e_email" class="form-error"></p>
             <div>
                 <label for="body" class="form-el">Wiadomość</label>
                 <textarea name="body" rows="10" class="form-el"></textarea>
             </div>
-            <p class="form-error"></p>
+            <p id="e_body" class="form-error"></p>
             <div>
                 <button type="submit" class="btn btn-primary">Wyślij</button>
             </div>
@@ -332,7 +338,9 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="./assets/jquery-3.4.1.min.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <!-- jQuery - validate -->
+    <script src="./assets/jquery-validate.js" type="text/javascript"></script>
+    <script src="./assets/js/main.js" type="text/javascript"></script>
 </body>
 </html>

@@ -47,9 +47,9 @@ class Mail {
             $mail->AltBody = $this->message;
 
             $mail->send();
-            echo 'true';
+            echo json_encode('true');
         } catch (Exception $e) {
-            echo 'false';
+            echo json_encode('false');
         }
     }
 }
